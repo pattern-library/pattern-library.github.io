@@ -1,0 +1,5 @@
+/* Primary SASS file for the Generic Element p paragraph tag
+
+*/
+.test--p, .base--STYLED p {
+  font-size: 1em; }

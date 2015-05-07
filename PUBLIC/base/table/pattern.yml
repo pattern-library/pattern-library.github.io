@@ -1,0 +1,6 @@
+name: Table
+source: app/bower_components/pattern-library/patterns/base/table
+dataSource: pattern
+categoryUrl: base
+category: base
+css: table.css

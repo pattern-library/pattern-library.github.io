@@ -1,0 +1,10 @@
+name: Figure Image
+source: app/bower_components/pattern-library/patterns/components/figure-image
+dataSource: pattern
+description: A `figure` element with `figcaption` and an included `img` element from /base/img/img.html.
+includes:
+  - ../../base/img
+categoryUrl: components
+category: components
+css: figure-image.css
+script: ./figure-image.js

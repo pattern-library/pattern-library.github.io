@@ -1,0 +1,7 @@
+name: Heading Level 2 Generic H2
+source: app/patterns-local/generic-elm-h2
+dataSource: pattern
+description: Second level heading without twig or sass
+categoryUrl: uncategorized
+category: uncategorized
+css: generic-elm-h2.css

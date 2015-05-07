@@ -1,0 +1,13 @@
+name: Header html5 element
+source: app/patterns-local/components/test-include-header
+dataSource: pattern
+description: Header html5 element with includes to test
+includes:
+  - ../../generic-elm-h2
+  - ../../test-elm-h1
+  - ../../test-elm-p
+categoryUrl: base/subcatbase23
+category: base
+subcategory: subcatbase23
+css: test-include-header.css
+script: ./test-include-header.js

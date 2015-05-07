@@ -1,0 +1,7 @@
+name: Code
+source: app/bower_components/pattern-library/patterns/base/code
+dataSource: pattern
+description: Computer code in text
+categoryUrl: base
+category: base
+css: code.css

@@ -1,0 +1,7 @@
+name: Pre
+source: app/bower_components/pattern-library/patterns/base/pre
+dataSource: pattern
+description: Pre formatted text
+categoryUrl: base
+category: base
+css: pre.css

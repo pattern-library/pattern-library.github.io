@@ -1,0 +1,7 @@
+name: Em
+source: app/bower_components/pattern-library/patterns/base/em
+dataSource: pattern
+description: Emphasized text
+categoryUrl: base
+category: base
+css: em.css

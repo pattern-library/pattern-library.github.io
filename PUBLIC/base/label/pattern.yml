@@ -1,0 +1,7 @@
+name: Label
+source: app/bower_components/pattern-library/patterns/base/label
+dataSource: pattern
+description: The label element represents a caption in a user interface.
+categoryUrl: base
+category: base
+css: label.css

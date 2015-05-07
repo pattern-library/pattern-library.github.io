@@ -1,0 +1,7 @@
+name: Table cell
+source: app/bower_components/pattern-library/patterns/base/td
+dataSource: pattern
+description: Defines a cell inside a table that contains data.
+categoryUrl: base
+category: base
+css: td.css

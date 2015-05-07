@@ -1,0 +1,7 @@
+name: Base Image
+source: app/patterns-local/base/test-img
+dataSource: pattern
+description: A basic img html pattern
+categoryUrl: base
+category: base
+css: test-img.css

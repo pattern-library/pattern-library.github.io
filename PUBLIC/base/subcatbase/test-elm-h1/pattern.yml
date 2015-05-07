@@ -1,0 +1,9 @@
+name: Heading Level 1 Test H1
+source: app/patterns-local/test-elm-h1
+dataSource: pattern
+description: First level heading inside a test
+categoryUrl: base/subcatbase
+category: base
+subcategory: subcatbase
+css: test-elm-h1.css
+script: ./test-elm-h1.js
