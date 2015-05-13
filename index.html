@@ -1,53 +1,11 @@
-
-    <link rel="stylesheet" href="styles/nav.css">
-<div class="nav">
-  <ul class="patterns-menu">
-                  <li>base<ul>
-                                                                                                              <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/a/a.html')">Anchor Link</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/blockquote/blockquote.html')">Blockquote</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/body/body.html')">Body</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/button/button.html')">Button</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/code/code.html')">Code</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/em/em.html')">Em</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/h1/h1.html')">Heading Level 1</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/h2/h2.html')">Heading Level 2</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/h3/h3.html')">Heading Level 3</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/h4/h4.html')">Heading Level 4</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/h5/h5.html')">Heading Level 5</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/h6/h6.html')">Heading Level 6</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/img/img.html')">Base Image</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/label/label.html')">Label</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/li/li.html')">List Item</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/ol/ol.html')">Ordered List</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/option/option.html')">Option</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/p/p.html')">Paragraph</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/pre/pre.html')">Pre</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/select/select.html')">Select</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/strong/strong.html')">Strong</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/table/table.html')">Table</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/tbody/tbody.html')">Table body element</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/td/td.html')">Table cell</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/test-img/test-img.html')">Base Image</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/textarea/textarea.html')">Textarea</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/th/th.html')">Table header cell</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/thead/thead.html')">Table header</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/tr/tr.html')">Table row</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/base/ul/ul.html')">Unordered List</a></li>
-                </ul></li>
-                        <li>uncategorized<ul>
-                          <li><a href="Javascript:;" onclick="iframechange('PUBLIC/uncategorized/generic-elm-h2/generic-elm-h2.html')">Heading Level 2 Generic H2</a></li>
-                </ul></li>
-                        <li>components<ul>
-                                                                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/components/figure-image/figure-image.html')">Figure Image</a></li>
-                  <li><a href="Javascript:;" onclick="iframechange('PUBLIC/components/message/message.html')">Message</a></li>
-                </ul></li>
-            </ul>
-
-</div>
-<iframe id="viewport" sandbox="allow-same-origin allow-scripts" src="http://localhost:8001/PUBLIC/base/a/a.html"></iframe>
-
-<script type="text/javascript">
-  function iframechange(url){
-    document.getElementById('viewport').src = url;
-  }
-</script>
+<dl>
+  <dt>What is a pattern library?</dt>
+  <dd>Generally thought of as reusable user interface designs represented by html and css.</dd>
+  <dt>What is THIS pattern library?</dt>
+  <dd>A set of reusable html template files, coupled with styling by css and functionality from javascript. These html/css/js files are packaged with example data.</dd>
+  <dt>What makes them reusable?</dt>
+  <dd>The included html files are in one (or more) templating formats such as <a href="http://twig.sensiolabs.org">twig</a> or <a href="https://mustache.github.io">mustache</a>, which include {{curlyBraced}} placeholders for data. These files can be styled in your favorite design-in-browser tool after compiling with the included dummy data or imported into your cms system as raw templates.</dd>
+  <dt>How can I learn more and use it?</dt>
+  <dd>To see some example patterns, see the current <a href="http://github.com/pattern-library/pattern-library">pattern library</a> on GitHub.</dd>
+  <dd>To play around with the code we're using to import these patterns into our projects, see our <a href="http://github.com/pattern-library/pattern-importer">pattern importer</a>.</dd>
+</dl>
