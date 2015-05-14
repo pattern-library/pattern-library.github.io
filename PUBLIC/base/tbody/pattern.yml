@@ -1,7 +1,0 @@
-name: Table body element
-source: app/bower_components/pattern-library/patterns/base/tbody
-dataSource: pattern
-description: Defines one or more rows and cells that make up a table
-categoryUrl: base
-category: base
-css: tbody.css

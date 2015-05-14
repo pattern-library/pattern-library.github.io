@@ -1,0 +1,8 @@
+name: Table row
+source: app/bower_components/pattern-library/patterns/base/tr
+dataSource: pattern
+description: 'The <tr> tag defines a row in an HTML table.'
+categoryUrl: base/tables
+category: base
+subcategory: tables
+css: tr.css

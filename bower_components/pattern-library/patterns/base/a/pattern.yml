@@ -1,0 +1,10 @@
+name: Anchor Link
+description: Anchor Link
+twig: ./a.twig
+sass: ./a.scss
+category: base
+subcategory: text
+data:
+  a:
+    text: Anchor Link
+    class: base--a

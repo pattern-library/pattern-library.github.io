@@ -1,7 +1,0 @@
-name: Anchor Link
-source: app/bower_components/pattern-library/patterns/base/a
-dataSource: pattern
-description: Anchor Link
-categoryUrl: base
-category: base
-css: a.css

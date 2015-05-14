@@ -1,0 +1,8 @@
+name: Ordered List
+source: app/bower_components/pattern-library/patterns/base/ol
+dataSource: pattern
+description: Ordered list of items
+categoryUrl: base/lists
+category: base
+subcategory: lists
+css: ol.css

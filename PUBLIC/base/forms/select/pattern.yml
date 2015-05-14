@@ -1,0 +1,8 @@
+name: Select
+source: app/bower_components/pattern-library/patterns/base/select
+dataSource: pattern
+description: Select represents a control that presents a menu of options.
+categoryUrl: base/forms
+category: base
+subcategory: forms
+css: select.css

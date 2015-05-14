@@ -1,9 +1,0 @@
-name: Paragraph tag tester testing
-source: app/patterns-local/test-elm-p
-dataSource: pattern
-description: This is a very fancy Paragraph tag which is used to test.
-categoryUrl: base/sometestsubcat
-category: base
-subcategory: sometestsubcat
-css: test-elm-p.css
-script: ./test-elm-p.js

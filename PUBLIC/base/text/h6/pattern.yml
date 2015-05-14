@@ -1,0 +1,8 @@
+name: Heading Level 6
+source: app/bower_components/pattern-library/patterns/base/h6
+dataSource: pattern
+description: Sixth level heading within an associated section
+categoryUrl: base/text
+category: base
+subcategory: text
+css: h6.css

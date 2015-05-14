@@ -1,7 +1,0 @@
-name: Blockquote
-source: app/bower_components/pattern-library/patterns/base/blockquote
-dataSource: pattern
-description: An extended quotation
-categoryUrl: base
-category: base
-css: blockquote.css

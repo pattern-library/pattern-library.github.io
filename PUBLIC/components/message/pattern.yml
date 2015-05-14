@@ -1,8 +1,0 @@
-name: Message
-source: app/bower_components/pattern-library/patterns/components/message
-dataSource: pattern
-description: A message component with a content area
-categoryUrl: components
-category: components
-css: message.css
-script: ./message.js
