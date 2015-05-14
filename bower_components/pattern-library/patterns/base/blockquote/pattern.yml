@@ -1,0 +1,10 @@
+name: Blockquote
+description: An extended quotation
+twig: ./blockquote.twig
+sass: ./blockquote.scss
+category: base
+subcategory: text
+data:
+  blockquote:
+    text: Blockquote
+    class: base--blockquote

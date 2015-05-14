@@ -1,0 +1,8 @@
+name: Paragraph
+source: app/bower_components/pattern-library/patterns/base/p
+dataSource: pattern
+description: Defines paragraphs of text within a page
+categoryUrl: base/text
+category: base
+subcategory: text
+css: p.css

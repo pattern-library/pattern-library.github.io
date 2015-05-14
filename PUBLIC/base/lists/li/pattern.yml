@@ -1,0 +1,8 @@
+name: List Item
+source: app/bower_components/pattern-library/patterns/base/li
+dataSource: pattern
+description: Defines a list item.
+categoryUrl: base/lists
+category: base
+subcategory: lists
+css: li.css

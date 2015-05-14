@@ -1,7 +1,0 @@
-name: Table header cell
-source: app/bower_components/pattern-library/patterns/base/th
-dataSource: pattern
-description: Defines a header cell inside a table that contains data.
-categoryUrl: base
-category: base
-css: th.css

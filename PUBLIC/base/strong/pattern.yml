@@ -1,7 +1,0 @@
-name: Strong
-source: app/bower_components/pattern-library/patterns/base/strong
-dataSource: pattern
-description: Important (strong) text
-categoryUrl: base
-category: base
-css: strong.css

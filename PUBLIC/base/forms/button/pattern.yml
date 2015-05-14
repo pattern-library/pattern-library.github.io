@@ -1,0 +1,8 @@
+name: Button
+source: app/bower_components/pattern-library/patterns/base/button
+dataSource: pattern
+description: A button element to trigger an action
+categoryUrl: base/forms
+category: base
+subcategory: forms
+css: button.css

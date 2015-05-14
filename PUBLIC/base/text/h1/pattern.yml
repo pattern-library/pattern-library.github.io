@@ -1,0 +1,8 @@
+name: Heading Level 1
+source: app/bower_components/pattern-library/patterns/base/h1
+dataSource: pattern
+description: First level heading for associated section
+categoryUrl: base/text
+category: base
+subcategory: text
+css: h1.css

@@ -1,7 +1,0 @@
-name: Textarea
-source: app/bower_components/pattern-library/patterns/base/textarea
-dataSource: pattern
-description: A flexible and configurable area for a long-form text input.
-categoryUrl: base
-category: base
-css: textarea.css

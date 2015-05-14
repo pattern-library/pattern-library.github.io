@@ -1,0 +1,8 @@
+name: Heading Level 4
+source: app/bower_components/pattern-library/patterns/base/h4
+dataSource: pattern
+description: Fourth level heading within an associated section
+categoryUrl: base/text
+category: base
+subcategory: text
+css: h4.css

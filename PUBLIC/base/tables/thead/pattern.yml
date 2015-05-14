@@ -1,0 +1,8 @@
+name: Table header
+source: app/bower_components/pattern-library/patterns/base/thead
+dataSource: pattern
+description: 'The <thead> tag is used to group header content in an HTML table'
+categoryUrl: base/tables
+category: base
+subcategory: tables
+css: thead.css

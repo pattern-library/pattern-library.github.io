@@ -1,0 +1,16 @@
+/* Primary SASS file for the Figure Image HTML pattern
+
+*/
+
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/extends';
+
+.base--figure-image,
+.base--STYLED figure {
+  //@extend %base--figure-image;
+}
+
+body {
+  background-color: black;
+}

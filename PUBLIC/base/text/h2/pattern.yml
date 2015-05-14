@@ -1,0 +1,8 @@
+name: Heading Level 2
+source: app/bower_components/pattern-library/patterns/base/h2
+dataSource: pattern
+description: Second level heading within an associated section
+categoryUrl: base/text
+category: base
+subcategory: text
+css: h2.css

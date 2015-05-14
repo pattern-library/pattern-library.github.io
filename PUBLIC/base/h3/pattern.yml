@@ -1,7 +1,0 @@
-name: Heading Level 3
-source: app/bower_components/pattern-library/patterns/base/h3
-dataSource: pattern
-description: Third level heading within an associated section
-categoryUrl: base
-category: base
-css: h3.css
