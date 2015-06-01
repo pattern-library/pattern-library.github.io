@@ -18,8 +18,8 @@ var options = {
 require('pattern-importer').gulpImportPatterns(require('gulp'),options);
 
 var menuOptions = {
-  src: './node_modules/pattern-presenter/templates/menu.twig',
-  dest: './app/PUBLIC/something.html'
+  src: './menu-patternlab.twig',
+  dest: './app/PUBLIC/menu-pl.html'
 }
 require('pattern-presenter').gulpPatternsMenu(require('gulp'),menuOptions);
 

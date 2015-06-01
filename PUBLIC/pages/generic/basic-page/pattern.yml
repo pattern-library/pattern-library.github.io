@@ -1,0 +1,7 @@
+name: Basic Page
+source: app/bower_components/pattern-library/patterns/pages/basic-page
+dataSource: pattern
+description: A full html page template with the minimum amount of required elements
+categoryUrl: pages/generic
+category: pages
+subcategory: generic
