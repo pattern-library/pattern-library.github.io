@@ -1,0 +1,7 @@
+name: Show
+source: app/bower_components/pattern-library/patterns/components/show
+dataSource: pattern
+description: A (TV) show component with an `img`
+categoryUrl: components/entertainment
+category: components
+subcategory: entertainment
