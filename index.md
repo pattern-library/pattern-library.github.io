@@ -8,6 +8,11 @@ layout: default
 
 The pattern library system is a way to organize your html patterns with their supporting files (css/javascript), package them into categories, and include dummy data.
 
+## Pattern Library Links
+
+* [Base Pattern Library](https://github.com/pattern-library/pattern-library)
+* [Pattern Library Yeoman Generator](https://github.com/scottnath/generator-pattern-library)
+
 ## Single-Pattern Folder Contents
 
 These are the files which *may* be in a single HTML pattern's directory. This imaginary pattern is called *example-pattern*. 
