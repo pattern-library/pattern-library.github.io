@@ -1,0 +1,13 @@
+# Site settings
+title: Pattern Library
+description: > # this means to ignore newlines until "baseurl:"
+  The Pattern Library is an organizational structure for html 
+  patterns and their supporting files such as css and javascript.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://pattern-library.github.io" # the base hostname & protocol for your site
+github_username: pattern-library
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
