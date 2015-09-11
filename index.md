@@ -6,14 +6,137 @@ layout: default
 
 ## What is this?
 
-The pattern library system is a way to organize your html patterns with their supporting files (css/javascript), package them into categories, and include dummy data.
+The pattern library system:
+	
+* creates an organized structure for your html patterns
+* packages html patterns with
+	* supporting files, like css & javascript
+	* dummy data
+	* README
+* packages each library with [Pattern Lab](http://patternlab.io/), a web development prototyping tool
+* uses [Gulp](http://gulpjs.com) to add tons features
+* uses [Browser Sync](http://www.browsersync.io/) to create a server for in-browser development
 
-## Pattern Library Links
+## TOC
 
-* [Base Pattern Library](https://github.com/pattern-library/pattern-library)
-* [Pattern Library Yeoman Generator](https://github.com/scottnath/generator-pattern-library)
+* [Relevant Repositories](#relevant-repositories)
+* [How to create a pattern library](#how-to-create-a-pattern-library)
+* [Gulp Tasks Available](#gulp-tasks-available)
+* [What makes up a Pattern?](#what-makes-up-a-pattern)
+	* [Single-Pattern Folder Contents](#single-pattern-folder-contents)
+	* [Pattern YAML File](#pattern-yaml-file-pattern.yml-required)
+	* [Template File](#template-file-example-pattern.twig-required)
+	* [Other Optional Included Files](#other-optional-included-files)
 
-## Single-Pattern Folder Contents
+	
+
+## Relevant Repositories
+
+* [pattern library](https://github.com/pattern-library/pattern-library)
+  * contains base (atoms/molecule level) html elements
+  * has full gulp functionality
+  * built with [pattern library yeoman generator](https://github.com/pattern-library/generator-pattern-library)
+* [pattern library generator](https://github.com/pattern-library/generator-pattern-library)
+  * [Yeoman](http://yeoman.io) generator that scaffolds out a new pattern library
+  * adds gulp functions to pattern libraries, like:
+    * watching files
+    * creating a server
+    * installing Pattern Lab
+  * has a sub-generator that scaffolds out a new pattern which includes:
+    * pattern yaml data file
+    * a README
+    * a pattern template, in html or twig
+    * optional SASS file
+    * optional JS file
+* [pattern library utilities](https://github.com/pattern-library/pattern-library-utilities)
+  * contains javascript modules that:
+    * import patterns into Pattern Lab (and other systems)
+    * convert twig include paths inside twig templates
+    * convert YAML data into JSON
+    * get options for gulp tasks
+  * contains gulp tasks that can be imported into an projects gulpfile.js and used by adding configuration
+  * gulp tasks available:
+    * doxx: creates documentation site from code, [example: pattern-library-utilities docs](http://pattern-library.github.io/pattern-library-utilities/)
+    * ghPages: publishes code to GitHub Pages; defaults to publish Pattern Lab's public directory
+    * patterns-import: imports patterns and supporting files into Pattern Lab and other systems
+    * file globbing: reads through directories, globs specific files, injects references to those files into other files (SCRIPT tags for js, @import for scss, etc)
+  * contains compiling scripts for scss and twig
+
+## How to create a pattern library
+
+1. Install the [pattern library generator](https://github.com/pattern-library/generator-pattern-library)
+
+    ```npm install -g generator-pattern-library```
+
+2. Run the generator in an empty repository
+
+    ```yo pattern-library```
+
+    a. scaffolds out the pattern library structure
+    b. installs NPM dependencies
+    c. scaffolds out a global assets directory
+
+3. Install Pattern Lab for prototyping
+
+    ```gulp build```
+  
+    a. installs Pattern Lab using composer
+    b. copies patterns and javascript into Pattern Lab ./source
+    c. copies global assets into Pattern Lab
+
+4. Serve files and begin development
+
+    ```gulp serve```
+  
+    a. creates `<script>` tags for javascript files
+    b. creates `@import` statements for scss files
+    c. compiles scss
+    d. triggers a PHP Pattern Lab build
+    e. uses browsersync to create a server for Pattern Lab
+    f. maintains a watch on files
+    g. refreshes browser on file changes
+  
+## Gulp Tasks available
+
+**note:** you can always type `gulp help` to see a list of available gulp tasks
+
+notable tasks:
+
+* browsersync
+  * serves Pattern Lab's *public* directory
+* build
+  * builds structure/installs Pattern Lab
+* ghPages
+  * deploys Pattern Lab's *public* directory to GitHub Pages
+* glob-inject-js-all
+  * globs all javascript files
+  * (other JS glob tasks available)
+* glob-inject-sass-all
+  * globs all sass files
+  * (other sass glob tasks available)
+* help
+  * lists available gulp tasks
+* patternlab-build-public
+  * triggers Pattern Lab's build system
+* patternlab-clean
+  * prepares Pattern Lab's source folder for the pattern library
+* patternlab-install
+  * installs Pattern Lab
+* patterns-import-all
+  * imports patterns from local and npm into Pattern Lab
+* sass
+  * sass file compilation
+* serve
+  * development server
+* global-assets-import-all
+  * all global asset imported into Pattern Lab
+  * (other global assets import tasks avail)
+* watch
+  * watch tasks for all different types of files
+
+## What makes up a Pattern?
+
+### Single-Pattern Folder Contents
 
 These are the files which *may* be in a single HTML pattern's directory. This imaginary pattern is called *example-pattern*. 
 
@@ -27,7 +150,7 @@ The *only* required files are `pattern.yml` and a pattern file (in any templatin
   * ![file](/images/document.png) example-pattern.scss
 
 
-## Pattern YAML File (`pattern.yml`, required)
+### Pattern YAML File (`pattern.yml`, required)
 
 Each single pattern folder *must* contain a `pattern.yml` file. 
 
@@ -54,17 +177,17 @@ data:
     class: base__figure-image
 ```
 
-## Template File (`example-pattern.twig`, required)
+### Template File (`example-pattern.twig`, required)
 
 Each pattern folder *must* contain a `[pattern-name].[template-lang]` (example-pattern.twig) file. These files should *not* contain actual text, data, images, etc. Instead, patterns use curly-braces as data placeholders. Even if they are .html files.
 
-## Other possible included files
+### Other Optional Included Files
 
-### README.md
+#### README.md
 
 Should include usage examples
 
-### PATTERN.js
+#### PATTERN.js
 
 A pattern's javascript file. Include in `pattern.yml` like this:
 
@@ -74,7 +197,7 @@ script: example-pattern.js
 ...
 ```
 
-### PATTERN.css
+#### PATTERN.css
 
 A CSS file. Include in `pattern.yml` like this:
 
@@ -84,7 +207,7 @@ css: example-pattern.css
 ...
 ```
 
-### PATTERN.scss
+#### PATTERN.scss
 
 A SASS file. **NOTE:** do not prefix this file with an underscore or it will be ignored when import-conversion happens. Include in `pattern.yml` like this:
 
