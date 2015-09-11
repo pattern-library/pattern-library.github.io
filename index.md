@@ -24,8 +24,8 @@ The pattern library system:
 * [Gulp Tasks Available](#gulp-tasks-available)
 * [What makes up a Pattern?](#what-makes-up-a-pattern)
 	* [Single-Pattern Folder Contents](#single-pattern-folder-contents)
-	* [Pattern YAML File](#pattern-yaml-file-pattern.yml-required)
-	* [Template File](#template-file-example-pattern.twig-required)
+	* [Pattern YAML File](#pattern-yaml-file-patternyml-required)
+	* [Template File](#template-file-example-patterntwig-required)
 	* [Other Optional Included Files](#other-optional-included-files)
 
 	
