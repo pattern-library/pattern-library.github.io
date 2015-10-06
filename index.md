@@ -6,18 +6,17 @@ layout: default
 
 ## What is this?
 
-The pattern library system:
-	
-* creates an organized structure for your html patterns
-* packages html patterns with
-	* supporting files, like css & javascript
-	* dummy data
-	* README
-* packages each library with [Pattern Lab](http://patternlab.io/), a web development prototyping tool
-* uses [Gulp](http://gulpjs.com) to add tons features
-* uses [Browser Sync](http://www.browsersync.io/) to create a server for in-browser development
+A NodeJS-based system that creates a storage-and-sharing standard for your functioning UX patterns.
 
-## TOC
+* creates an organized structure for your html-based components
+* packages components with
+	* dummy data
+  * supporting files, like css (or sass or stylus or less) & javascript
+* packages each library with [Pattern Lab](http://patternlab.io/), a web development prototyping tool
+* is built for *design-in-browser* development
+* runs a web server that triggers *auto-refresh on all connected devices* on file changes
+
+## Table of Contents for this page:
 
 * [Relevant Repositories](#relevant-repositories)
 * [How to create a pattern library](#how-to-create-a-pattern-library)
@@ -35,26 +34,27 @@ The pattern library system:
 * [pattern library](https://github.com/pattern-library/pattern-library)
   * contains base (atoms/molecule level) html elements
   * has full gulp functionality
-  * built with [pattern library yeoman generator](https://github.com/pattern-library/generator-pattern-library)
+  * built with the [pattern library generator](https://github.com/pattern-library/generator-pattern-library)
 * [pattern library generator](https://github.com/pattern-library/generator-pattern-library)
   * [Yeoman](http://yeoman.io) generator that scaffolds out a new pattern library
+  * creates a new pattern library
+  * creates a new html component which includes:
+    * yaml-based data file
+    * a pattern's markup, in html or twig
+    * optional SASS file
+    * optional JS file
+    * a README
+* [pattern library utilities](https://github.com/pattern-library/pattern-library-utilities)
   * adds gulp functions to pattern libraries, like:
     * watching files
     * creating a server
     * installing Pattern Lab
-  * has a sub-generator that scaffolds out a new pattern which includes:
-    * pattern yaml data file
-    * a README
-    * a pattern template, in html or twig
-    * optional SASS file
-    * optional JS file
-* [pattern library utilities](https://github.com/pattern-library/pattern-library-utilities)
   * contains javascript modules that:
     * import patterns into Pattern Lab (and other systems)
     * convert twig include paths inside twig templates
     * convert YAML data into JSON
     * get options for gulp tasks
-  * contains gulp tasks that can be imported into an projects gulpfile.js and used by adding configuration
+  * contains gulp tasks that can be imported into a project's gulpfile.js and used by adding configuration
   * gulp tasks available:
     * doxx: creates documentation site from code, [example: pattern-library-utilities docs](http://pattern-library.github.io/pattern-library-utilities/)
     * ghPages: publishes code to GitHub Pages; defaults to publish Pattern Lab's public directory
@@ -102,10 +102,14 @@ The pattern library system:
 
 notable tasks:
 
-* browsersync
-  * serves Pattern Lab's *public* directory
-* build
-  * builds structure/installs Pattern Lab
+* `gulp build`
+  * installs Pattern Lab
+  * imports your pattern library into Pattern Lab
+  * imports from other pattern libraries
+* `gulp serve`
+  * development server
+  * browser refresh on file changes
+
 * ghPages
   * deploys Pattern Lab's *public* directory to GitHub Pages
 * glob-inject-js-all
@@ -126,8 +130,6 @@ notable tasks:
   * imports patterns from local and npm into Pattern Lab
 * sass
   * sass file compilation
-* serve
-  * development server
 * global-assets-import-all
   * all global asset imported into Pattern Lab
   * (other global assets import tasks avail)
