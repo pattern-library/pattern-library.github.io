@@ -4,18 +4,31 @@ layout: default
 
 # Pattern Library
 
-## What is this?
+## What is a Pattern?
 
-The pattern library system:
+### A pattern is a reusable, functional html-based component. 
+
+Each pattern is packaged with:
+
+* an HTML file (in your templating languge-of-choice)
+* dummy data
+* javascript
+* css (in your css compiler-of-choice)
+
+![test](/images/folder-pattern-contents.png)
+
+*see: [What makes up a pattern?](#what-makes-up-a-pattern)*
+
+## What is a pattern library?
+
+Each pattern library:
 	
-* creates an organized structure for your html patterns
-* packages html patterns with
-	* supporting files, like css & javascript
-	* dummy data
-	* README
-* packages each library with [Pattern Lab](http://patternlab.io/), a web development prototyping tool
-* uses [Gulp](http://gulpjs.com) to add tons features
-* uses [Browser Sync](http://www.browsersync.io/) to create a server for in-browser development
+* organizes your patterns
+* includes [Pattern Lab](http://patternlab.io/), a web development prototyping tool
+* includes Live, in-browser development:
+  * instant browser refresh after saving files
+  * template and css compilation
+* publishes your work to [GitHub Pages](https://pages.github.com/)
 
 ## TOC
 
@@ -133,6 +146,7 @@ notable tasks:
   * (other global assets import tasks avail)
 * watch
   * watch tasks for all different types of files
+
 
 ## What makes up a Pattern?
 
