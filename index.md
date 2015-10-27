@@ -100,7 +100,7 @@ Each pattern library:
 
 ### Pattern Library Utilities
 
-[github.com/pattern-library/pattern-library-utilities]](https://github.com/pattern-library/pattern-library-utilities)
+[github.com/pattern-library/pattern-library-utilities](https://github.com/pattern-library/pattern-library-utilities)
 
   * Adds gulp functionality to your pattern libraries, such as:
     * Watching files
